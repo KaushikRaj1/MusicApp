@@ -1,7 +1,6 @@
 package com.kaushik1.musicapp
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -38,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             .create(ApiInterface::class.java)
 
 
-        val retrofitData = retrofitBuilder.getData("shreya")
+        val retrofitData = retrofitBuilder.getData("eminem")
 
         retrofitData.enqueue(object : Callback<MyData?> {
             override fun onResponse(call: Call<MyData?>, response: Response<MyData?>) {
