@@ -54,4 +54,8 @@ dependencies {
     //implementation("com.squareup.retrofit2:converter-gson:2.11.0") from new implementation technique
     implementation(libs.converter.gson)
 
+    // picaaso for converting image link in API
+    //implementation ("com.squareup.picasso:picasso:2.8")
+    implementation (libs.picasso)
+
 }
